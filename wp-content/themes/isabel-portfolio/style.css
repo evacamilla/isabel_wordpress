@@ -1,0 +1,187 @@
+/**
+Theme Name: Isabel-portfolio
+Template: envy-blog
+*/
+
+@font-face {
+    font-family: 'Fortescue';
+    src: url('Fortescue-Regular.ttf'); 
+    }
+@font-face {
+    font-family: 'Circular Std Black';
+    src: url('CircularStd-Black.ttf'); 
+    }
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('CircularStd-Book.ttf'); 
+    }
+
+body {
+    padding:0px;
+    margin:0px;
+}
+.container {
+    background: none;
+    width: 100%;
+    padding:0 15px;}
+
+.site-branding h1 a:hover {
+    color: white;
+}
+
+/***HEADER***/
+.site-title a{
+    font-family: 'Fortescue';
+    font-size: 36px;
+    color: red;
+}
+.site-branding h1 a:hover {
+    color:#ffffff;
+   }
+
+.nav-bar {
+    background: none;
+}
+
+.main-navigation ul li{
+    font-family: 'Circular Std Black';
+    font-size: 1.15468751254688em;
+}
+
+.main-navigation ul li a:hover {
+    color: white;
+}
+
+.home .container{
+    background: rgba(0,0,0,0.03);
+}
+
+/***MASONRY IMAGE FEED ON HOME***/
+
+.home .entry-title {
+    font-size: 30px;
+    font-family: 'Fortescue';  
+}
+
+
+/*hover overlay*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+  }
+
+.overlay-text {  
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}  
+
+.featured-image:hover + .overlay{
+    opacity: 0.75;
+}
+
+.featured-image a.post-format::before {
+    background: transparent;
+}
+
+.featured-image a.post-format::after {
+    content: "";
+    background: transparent;
+}
+/**END hover overlay****/
+
+/*ABOUT PAGE*/
+.aboutright p {
+    font-family: 'Fortescue';
+    font-size: 1.25468751254688em;
+}
+.aboutright h2{
+    font-family: 'Circular Std Black';
+    font-size: 0.83645834169792em;
+}
+
+.aboutlist p {
+    font-family: 'Circular Std Book';
+    font-size: 0.83645834169792em;
+}
+
+.aboutlistright {
+    width: 50%;
+    float:left;
+}
+
+.aboutlistleft {
+    width: 50%;
+    float:left;
+}
+
+.aboutright{
+    max-width: 560px;
+}
+
+
+
+
+/*CONTACT PAGE*/
+.contacttext p {
+    width: 406px;
+    font-size: 1.4em;
+    margin:0px auto;
+    font-family: 'Fortescue';
+}
+.contacttext a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Circular Std Black';
+}
+.contacttext a:hover {
+    color: white;
+}
+
+
+/******** SCREEN WIDTH 576 ******/
+@media screen and (min-width: 576px){
+    .site-title a{
+        font-size: 70px;
+}
+}
+
+
+
+/********* SCREEN WIDTH 768 ********/
+@media screen and (min-width: 768px){
+/*ABOUT PAGE*/
+.aboutleft {
+    float:left;    
+}
+
+
+.aboutright {
+    float: left;
+}
+
+/*CONTACT PAGE*/
+.contacttext p {
+    font-size:1.6em;
+}
+}
+
+
+
+@media screen and (min-width: 992px){
+    .container {
+        padding: 0 25px;
+    }
+}
