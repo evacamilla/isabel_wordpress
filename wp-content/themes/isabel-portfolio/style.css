@@ -19,7 +19,14 @@ Template: envy-blog
 body {
     padding:0px;
     margin:0px;
+    line-height: 1.42857143;
 }
+
+p {
+    max-width: 65ch;
+    word-break: normal;
+}
+
 .container {
     background: none;
     width: 100%;
@@ -56,12 +63,12 @@ body {
     background: rgba(0,0,0,0.03);
 }
 
-/***MASONRY IMAGE FEED ON HOME***/
-
 .home .entry-title {
     font-size: 30px;
     font-family: 'Fortescue';  
 }
+
+/***MASONRY IMAGE FEED ON HOME***/
 
 
 /*hover overlay*/
@@ -103,6 +110,7 @@ body {
 /**END hover overlay****/
 
 /*ABOUT PAGE*/
+
 .aboutright p {
     font-family: 'Fortescue';
     font-size: 1.25468751254688em;
@@ -112,14 +120,13 @@ body {
     font-size: 0.83645834169792em;
 }
 
-.aboutlist p {
-    font-family: 'Circular Std Book';
-    font-size: 0.83645834169792em;
+.aboutright{
+    max-width: 560px;
 }
 
-.aboutlistright {
-    width: 50%;
-    float:left;
+.aboutlist p {
+    font-family: 'Circular Std Book';
+    font-size: 0.8645834169792em;
 }
 
 .aboutlistleft {
@@ -127,11 +134,15 @@ body {
     float:left;
 }
 
-.aboutright{
-    max-width: 560px;
+.aboutlistright {
+    width: 50%;
+    float:left;
+    padding-left: 40px;
 }
 
-
+.row.has-full-width{
+    padding:0px;
+}
 
 
 /*CONTACT PAGE*/
@@ -151,25 +162,41 @@ body {
 }
 
 
+/*************SINGLE POST*************/
+.post-content {
+    border:1px solid red;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
 /******** SCREEN WIDTH 576 ******/
 @media screen and (min-width: 576px){
     .site-title a{
         font-size: 70px;
+        margin-left: -20px;
 }
 }
 
 
 
 /********* SCREEN WIDTH 768 ********/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){    
+
+.site-title a{
+    margin-left: -36px;
+}
+
 /*ABOUT PAGE*/
 .aboutleft {
-    float:left;    
+    float:left;  
+    width: 280px;
+    margin-top:32px;  
 }
 
 
 .aboutright {
     float: left;
+    padding-left: 30px;
 }
 
 /*CONTACT PAGE*/
@@ -183,5 +210,12 @@ body {
 @media screen and (min-width: 992px){
     .container {
         padding: 0 25px;
+    }
+    .site-title a{
+        margin-left: -56px;
+    }
+
+    .aboutleft{
+        width:300px;
     }
 }
