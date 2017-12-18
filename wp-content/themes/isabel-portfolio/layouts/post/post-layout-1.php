@@ -113,9 +113,11 @@ $content_order_lists    = get_theme_mod( 'envy-blog_post_layout1_content_order_l
             get_template_part( 'inc/author-bio', get_post_format() );
         }
 
-        // Post Navigation
-        get_template_part( 'layouts/navigation/post-navigation', get_post_format() );
         ?>
 
-    </div><!-- .post-content -->
+    </div><!-- .post-content -->        
+        <?php
+        // Post Navigation
+            get_template_part( 'layouts/navigation/post-navigation', get_post_format() );
+        ?>
 </article><!-- #post- -->
