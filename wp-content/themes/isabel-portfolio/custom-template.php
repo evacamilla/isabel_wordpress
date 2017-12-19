@@ -1,8 +1,7 @@
 <?php
 /**
- * Template name: custom template
+ * Template name: Custom Template
  */ 
-$body_class = 'about';
 get_header();
 
 $page_layout   = get_theme_mod( 'envy-blog_page_layout', 'page-layout-1' );
