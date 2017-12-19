@@ -42,6 +42,11 @@ p {
     font-size: 36px;
     color: red;
 }
+
+.site-branding{
+    padding-top:0px;
+}
+
 .site-branding h1 a:hover {
     color:#ffffff;
    }
@@ -53,6 +58,7 @@ p {
 .main-navigation ul li{
     font-family: 'Circular Std Black';
     font-size: 1.15468751254688em;
+    margin-left: 0px;
 }
 
 .main-navigation ul li a:hover {
@@ -110,6 +116,9 @@ p {
 /**END hover overlay****/
 
 /*ABOUT PAGE*/
+.post-content .order-position.entry-content, .page-content .order-position.entry-content {
+    margin-top: -20px;
+}
 
 .aboutright p {
     font-family: 'Fortescue';
@@ -127,6 +136,8 @@ p {
 .aboutlist p {
     font-family: 'Circular Std Book';
     font-size: 0.8645834169792em;
+    margin-top:0px;
+    padding:0px;
 }
 
 .aboutlistleft {
@@ -148,14 +159,16 @@ p {
 /*CONTACT PAGE*/
 .contacttext p {
     width: 406px;
-    font-size: 1.4em;
+    font-size: 1.25468751254688em;
     margin:0px auto;
     font-family: 'Fortescue';
+    margin-bottom:18px;
 }
 .contacttext a{
     text-decoration: none;
     color: black;
     font-family: 'Circular Std Black';
+    line-height:180%;
 }
 .contacttext a:hover {
     color: white;
@@ -163,17 +176,20 @@ p {
 
 
 /*************SINGLE POST*************/
-.post-content {
-    border:1px solid red;
-    max-width: 800px;
-    margin: 0px auto;
-}
 
 /******** SCREEN WIDTH 576 ******/
 @media screen and (min-width: 576px){
     .site-title a{
         font-size: 70px;
         margin-left: -20px;
+}
+
+/*CONTACT PAGE*/
+.contacttext{
+    margin-top: 40px;
+}
+.contacttext p {
+    font-size:1.6em;
 }
 }
 
@@ -196,15 +212,16 @@ p {
 
 .aboutright {
     float: left;
-    padding-left: 30px;
 }
 
-/*CONTACT PAGE*/
-.contacttext p {
-    font-size:1.6em;
-}
 }
 
+/***float reacting at this breakpoint... so only padding rule here***/
+@media screen and (min-width: 870px){
+    .aboutright {
+        padding-left: 80px;}
+}
+/************/
 
 
 @media screen and (min-width: 992px){
@@ -214,8 +231,17 @@ p {
     .site-title a{
         margin-left: -56px;
     }
-
     .aboutleft{
         width:300px;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .site-title a{
+    border:1px solid red;
+    }
+    .nav-bar {
+        border:1px solid red;
     }
 }
