@@ -19,9 +19,27 @@
 
     <?php wp_head(); ?>
 </head>
+<?php
+    //SETTING BODY CLASS
+    //Setting current url
+    //separating url to keep the page name and store it in $end
+    global $wp;
+    $current_url = home_url(add_query_arg(array(), $wp->request));
+    $end = end(explode('/', $current_url));
 
+    //checking which page user is on 
+    //set body class as page name
+    if ($end == "isabel_wordpress")
+        {
+        $body_class= "home";
+        }
+        else {
+            $body_class = $end;
+            }
+
+
+?>
 <body <?php body_class($body_class); ?>>
-
 <div class="container">
     <div class="row">
 
