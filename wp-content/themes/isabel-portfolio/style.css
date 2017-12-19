@@ -32,11 +32,9 @@ p {
     width: 100%;
     padding:0 15px;}
 
-.site-branding h1 a:hover {
-    color: white;
-}
 
 /***HEADER***/
+
 .site-title a{
     font-family: 'Fortescue';
     font-size: 36px;
@@ -65,6 +63,20 @@ p {
     color: white;
 }
 
+
+/*NAVIGATION DROP DOWN*/
+.main-navigation-sm.is-active {
+    height: 300px;
+    text-align:right;
+}
+.main-navigation-sm.is-active li a {
+    border-bottom: none;
+    padding:2px;
+    font-family: 'Circular Std Book';
+}
+
+/*****SPECIFIC DESIGN FOR HOME*******/
+
 .home .container{
     background: rgba(0,0,0,0.03);
 }
@@ -75,7 +87,9 @@ p {
 }
 
 /***MASONRY IMAGE FEED ON HOME***/
-
+.home .overlay-text {
+    width:80%;
+}
 
 /*hover overlay*/
 .overlay {
@@ -115,7 +129,12 @@ p {
 }
 /**END hover overlay****/
 
+
+
 /*ABOUT PAGE*/
+.about .container {
+    background-color: rgba(151, 116, 225, 0.2);
+}
 .post-content .order-position.entry-content, .page-content .order-position.entry-content {
     margin-top: -20px;
 }
@@ -157,6 +176,9 @@ p {
 
 
 /*CONTACT PAGE*/
+.contact .container{
+    background: rgba(246, 76, 33, 0.2);
+}
 .contacttext p {
     width: 406px;
     font-size: 1.25468751254688em;
@@ -219,7 +241,7 @@ p {
 /***float reacting at this breakpoint... so only padding rule here***/
 @media screen and (min-width: 870px){
     .aboutright {
-        padding-left: 80px;}
+        padding-left: 60px;}
 }
 /************/
 
@@ -239,9 +261,7 @@ p {
 
 @media screen and (min-width: 1200px){
     .site-title a{
-    border:1px solid red;
     }
     .nav-bar {
-        border:1px solid red;
     }
 }

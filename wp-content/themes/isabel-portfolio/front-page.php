@@ -7,7 +7,6 @@
  *
  * @package Envy Blog
  */
-$body_class = 'home';
 get_header();
 
 $blog_layout            = get_theme_mod( 'envy-blog_archive_page_layout', 'blog-layout-1' );
