@@ -62,12 +62,20 @@ p {
 .main-navigation ul li a:hover {
     color: white;
 }
-
-
+.main-navigation li.current-menu-item a {
+    color: black;
+}
+.main-navigation li.current-menu-item a:hover {
+    color: white;
+}
+.nav-bar-container {
+    max-height: 100px;
+}
 /*NAVIGATION DROP DOWN*/
 .main-navigation-sm.is-active {
     height: 300px;
     text-align:right;
+    background: none;
 }
 .main-navigation-sm.is-active li a {
     border-bottom: none;
@@ -197,7 +205,14 @@ p {
 }
 
 
+/****SHOP****/
+.woocommerce-products-header .page-header-content, .shop .page-header{
+    padding: 0px;
+    margin: 0px;
+}
+
 /*************SINGLE POST*************/
+
 
 /******** SCREEN WIDTH 576 ******/
 @media screen and (min-width: 576px){
